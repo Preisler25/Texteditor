@@ -16,19 +16,21 @@ public class HelloApplication extends Application {
         int height = 720;
 
         TextField textField = new TextField();
-        textField.setLayoutX(100);
-        textField.setLayoutY(100);
+        textField.setLayoutX(width/ 2 - 100);
+        textField.setLayoutY(height / 2 - 25);
+        textField.setPrefWidth(200);
+        textField.setPrefHeight(50);
+
+        Image icon = new Image("icon.png");
         Group group = new Group(textField);
         Scene scene = new Scene(group, width, height);
 
 
 
         stage.setScene(scene);
-
         stage.centerOnScreen();
-
+        stage.setResizable(false);
         stage.setTitle("Hello!");
-        Image icon = new Image("icon.png");
         stage.getIcons().add(icon);
         stage.show();
     }
