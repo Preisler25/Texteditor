@@ -24,8 +24,9 @@ public class HelloApplication extends Application {
         textField.setPrefWidth(200);
         textField.setPrefHeight(50);
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/example.fxml"));
-        VBox root = loader.load();
+        //FXMLLoader loader = new FXMLLoader(getClass().getResource("example.fxml"));
+        //System.out.println("alma");
+        //VBox root = loader.load();
 
         Image icon = new Image("icon.png");
         Group group = new Group(textField, root);
